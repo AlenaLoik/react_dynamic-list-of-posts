@@ -1,15 +1,18 @@
 body {
   font-family: Lucida, sans-serif;
-  padding: 50px;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   background: linear-gradient(45deg, #00b7ff,
   #ffffc7);
   box-sizing: border-box;
   transition: 0.4s;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px;
+  flex-direction: column;
 }
 
 p,
@@ -19,30 +22,20 @@ h3 {
   padding: 0;
 }
 
-h1,
 h2,
 h3 {
   text-transform: uppercase;
   margin-bottom: 8px;
 }
 
-.userInfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 80%;
-  background-color: antiquewhite;
-  padding: 15px;
-  color: rgba(0, 0, 0, 0.8);
-  margin-top: 50px;
-}
-
-h1 {
+.header {
   padding-bottom: 15px;
   color: rgb(47, 2, 87);
   text-align: center;
   max-width: 1000px;
   margin: 0 auto;
+  text-transform: uppercase;
+  margin-bottom: 8px;
 }
 
 .article {
@@ -93,6 +86,17 @@ h1 {
   text-align: start;
 }
 
+.user__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  background-color: antiquewhite;
+  padding: 15px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 50px;
+}
+
 h4 {
   margin: 0;
   padding: 0;
@@ -113,6 +117,7 @@ h4 {
   line-height: 1.1;
   white-space: pre-line;
   padding: 0.7em 0;
+  margin-top: 50px;
   border: 1px solid;
   border-color: #60a3d8 #2970a9 #2970a9 #60a3d8;
   border-radius: 6px;
@@ -169,14 +174,6 @@ input:focus {
   background-color: #333;
   font-size: 20px;
   cursor: pointer;
-}
-
-.button__subm:hover {
-  background-color: #e6e6e6;
-}
-
-.button__subm:active {
-  color: #00b7ff75;
 }
 
 .count__posts {

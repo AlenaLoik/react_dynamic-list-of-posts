@@ -11,7 +11,7 @@ type Props = {
 }
 
 export const User: React.FC<Props> = ({ name, email, address }) => (
-  <section className="userInfo">
+  <section className="user__info">
     <h3>about autor:</h3>
     <p><strong>{name}</strong></p>
     <h4>email:</h4>

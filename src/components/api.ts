@@ -1,14 +1,16 @@
+const API_URL = 'https://jsonplaceholder.typicode.com/';
+
 export const getPosts = () => {
-  return fetch('https://jsonplaceholder.typicode.com/posts')
+  return fetch(`${API_URL}posts`)
     .then(response => response.json());
 };
 
 export const getUsers = () => {
-  return fetch('https://jsonplaceholder.typicode.com/users')
+  return fetch(`${API_URL}users`)
     .then(response => response.json());
 };
 
 export const getComments = () => {
-  return fetch('https://jsonplaceholder.typicode.com/comments')
+  return fetch(`${API_URL}comments`)
     .then(response => response.json());
 };
